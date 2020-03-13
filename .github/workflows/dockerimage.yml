@@ -17,3 +17,11 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
       working-directory: 1/debian-10
+    - name: Run Docker compose
+      run: docker-compose up -d
+    - name: Sleep
+      uses: jakejarvis/wait-action@master
+      with:
+        time: '60s'
+    - name: Check running containers
+      run: docker ps
