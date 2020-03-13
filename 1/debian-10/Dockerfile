@@ -11,7 +11,7 @@ RUN /build/install-nami.sh
 RUN bitnami-pkg unpack apache-2.4.41-1 --checksum 2139963ce8e8fa949271b4ac7967b783b76a4aab87dfccb8a6f6715fc96a15d1
 RUN bitnami-pkg unpack php-7.3.15-1 --checksum 720a3692688580331d524cc84c0595f0e50e96d342ad0c8880fabb6854b014b6
 RUN bitnami-pkg unpack mysql-client-10.3.22-1 --checksum e9fa94f574c87d15f0b6aba7cff1c06f70c0e69c1c442378c9961fc148fa68ef
-RUN bitnami-pkg unpack postgresql-client 10.12.0-0 --checksum 79d8f599a6e93f5581162f18e80fe1e3b8020c6f1b56d19a94882d4484ad506f
+RUN bitnami-pkg unpack postgresql-client 10.12.0-0 --checksum 987971cbe05104f59132ad308e25019dc6a34cda9139e0d515e2f71de1508bd5
 RUN bitnami-pkg install libphp-7.3.15-0 --checksum c96f4cd9a52432202120b0e80b867edab40f74d7f478d46278c49d23aecd2f59
 RUN bitnami-pkg unpack mediawiki-1.34.0-1 --checksum dfe32836e8de6e2f9812d269f5acc50dc4acb09cc12705f5a4a039984e0e58e5
 RUN apt-get update && apt-get upgrade -y && \
